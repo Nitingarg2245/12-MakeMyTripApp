@@ -1,0 +1,16 @@
+!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket INFO</title>
+</head>
+<body>
+        <h1>Your Ticket Info is ::</h1>
+        <h2 th:text="${ticket.ticketId}"></h2>
+        <h2 th:text="${ticket.from}"></h2>
+        <h2 th:text="${ticket.to}"></h2>
+        <h2 th:text="${ticket.firstName}"></h2>
+        <h2 th:text="${ticket.lastName}"></h2>
+        <h2 th:text="${ticket.ticketPrice}"></h2>
+</body>
+</html>

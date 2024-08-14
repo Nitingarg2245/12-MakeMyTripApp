@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Passenger Registration</title>
+</head>
+<body>
+<form th:action="@{/ticketInfo}" th:object="${passenger}" method="post">
+    <div>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" th:field="*{fname}" required />
+    </div>
+    <div>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" th:field="*{lname}" required />
+    </div>
+    <div>
+        <label for="from">From:</label>
+        <input type="text" id="from" th:field="*{from}" required />
+    </div>
+    <div>
+        <label for="to">To:</label>
+        <input type="text" id="to" th:field="*{to}" required />
+    </div>
+    <div>
+        <label for="doj">Date of Journey:</label>
+        <input type="date" id="doj" th:field="*{doj}" required />
+    </div>
+    <div>
+        <label for="trainNumber">Train Number:</label>
+        <input type="text" id="trainNumber" th:field="*{trainNumber}" required />
+    </div>
+    <div>
+        <button type="submit">Register</button>
+    </div>
+</form>
+</body>
+</html>
